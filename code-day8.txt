@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Coolsbob Dent Repair</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo left">ToolsBob </a>
+                    <ul class="right">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="slider-out">
+        <div class="slider">
+            <ul class="slides">
+                <li class="image-container">
+                    <div class="caption center-align valign-wrapper">Paintless Dent Repair: Where Art Meets Automotive
+                        Science</div>
+
+                    <img class="headline_img" width="900"
+                        src="https://www.zimbrickbodyshop.com/blogs/2299/wp-content/uploads/2020/02/paintless-dent-repair-zimbrick-body-shop.jpg"
+                        alt="">
+                    </img>
+                    <div class="cover"></div>
+                </li>
+                <li class="image-container">
+                    <h1 class="caption center-align">Your Car's Second Chance: We Fix Dents Without a Trace</h1>
+                    <img class="headline_img material-boxed" src="img/DSC08476.JPG" alt="">
+                    </img>
+                    <div class="cover"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="body container">
+        <section>
+            <h2>Services offered</h2>
+        </section>
+        <div class="row center-align">
+            <div class="col center xl3 l4 m6 s6">
+                <div class="content">
+                    <img class="icon"
+                        src="https://fixedopsdigital.s3.amazonaws.com/oem/general/icons/2D2929/collision/2D2929-collision-paintless-dent-repair-icon-min.png"
+                        alt="">
+                    <h5>Dent Repair</h5>
+                </div>
+            </div>
+            <div class="col center xl3 l4 m6 s6">
+                <div class="content">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/65/65944.png" alt="">
+                    <h5>Hail Damage Repair</h5>
+                </div>
+            </div>
+            <div class="col center xl3 l4 m6 s6">
+                <div class="content">
+                    <img class="icon"
+                        src="https://fixedopsdigital.s3.amazonaws.com/oem/general/icons/2D2929/collision/2D2929-collision-dent-icon-min.png"
+                        alt="">
+                    <h5>Door Ding Removal</h5>
+                </div>
+            </div>
+            <div class="col center xl3 l4 offset-l4 m6 s6">
+                <div class="content">
+                    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3664/3664541.png" alt="">
+                    <h5>Minor Collision Repair</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({
+                indicators: false
+            });
+            $(window).resize(function () {
+                var width = $(window).width();
+                if (width <= 767) {
+                    $('.slider').slider({
+                        height: 250,
+                        indicators: false
+                    });
+                } else {
+                    $('.slider').slider({
+                        indicators: false
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+<style>
+.photo-banner {
+    height: 20vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #212121;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Titillium Web' sans-serif;
+}
+.brand-logo{
+    font-family: 'Titillium Web' sans-serif;
+    font-weight: 600;
+}
+.col {
+    margin-top: 1%;
+}
+
+.col img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the color and opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.caption {
+    position: absolute;
+    z-index: 2;
+    font-size: 500%;
+    font-family: 'Bebas Neue' sans-serif;
+    font-weight: 600;
+}
+
+.content {
+    background-color: #e0e0e0;
+    padding-bottom: 8%;
+    margin-bottom: 4%;
+    border-radius: 10%;
+    
+}
+
+.icon {
+    height: 69%;
+    width: 69%;
+    filter: grayscale(100);
+}
+h2{
+    font-family: 'Titillium Web' sans-serif;
+    font-weight: 600;
+}
+h5{
+    font-family: 'Bebas Neue' sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 1201px) {
+    .caption {
+        font-size: 60px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}
+@media (max-width: 1200px) {
+    .caption {
+        font-size: 60px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}
+@media (max-width: 992px) {
+    .caption {
+
+    }
+}
+@media (min-width: 601px) and (max-width: 782px) {
+    .caption {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .caption {
+        font-size: 30px;
+    }
+
+    .col img {
+        max-width: 50%;
+        height: 50%;
+    }
+}
+@media (min-width: 1430px) {
+    .caption {
+        font-size: 80px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}
+</style>

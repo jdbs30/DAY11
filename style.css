@@ -1,0 +1,169 @@
+.photo-banner {
+    height: 20vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #212121;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: 'Titillium Web' sans-serif;
+}
+.logo-text{
+    font-family: 'Titillium Web' sans-serif;
+    font-weight: 600;
+    font-size:xx-large;
+}
+.col {
+
+}
+
+.col img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the color and opacity as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.caption {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Bebas Neue';
+    font-weight: 500;
+
+}
+
+.content {
+    border: #212121 1px solid;
+    padding: 4%;
+    margin-bottom: 4%;
+    border-radius: 10%;
+    
+}
+
+.icon {
+    height: 69%;
+    width: 69%;
+    filter: grayscale(100);
+}
+h2{
+    font-family: 'Titillium Web' sans-serif;
+    font-weight: 600;
+}
+h5{
+    font-family: 'Bebas Neue' sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+.ser{
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+}
+.card{
+    height: fit-content;
+    .card-image img{
+        filter: brightness(80%);
+    }
+    transition: all ease-in-out 0.2s;
+}
+.card:hover{
+    outline: #212121 2px outset;
+    scale: 102%;
+    .card-image img{
+        filter:brightness(100%);
+    }
+}
+
+
+.card-image{
+    height: 25vh;
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.btn-large:hover{
+    background-color: whitesmoke;
+    outline: black 2px solid;
+    color: #212121;
+}
+.btn-large{
+    width: 10%;
+    background-color: #212121;
+    outline: #212121 2px solid;
+    color: white;
+}
+.card-reveal{
+    position: fixed;
+    z-index: 10;
+}
+.card-title{
+    margin-bottom: -5%;
+    width: 100%;
+}
+p{
+    cursor:default;
+    text-wrap:stable;
+}
+
+@media (min-width: 1201px) {
+    .caption {
+        font-size: 100px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}
+@media (max-width: 1200px) {
+    .caption {
+        font-size: 60px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}
+@media (max-width: 992px) {
+    .caption {
+
+    }
+}
+@media (min-width: 601px) and (max-width: 782px) {
+    .caption {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .caption {
+        font-size: 30px;
+    }
+
+    .card-image img{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (min-width: 1430px) {
+    .caption {
+        font-size: 80px;
+    }
+
+    .slider {
+        height: 10%;
+    }
+}

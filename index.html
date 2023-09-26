@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Coolsbob Dent Repair</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+
+                <div class="nav-wrapper">
+                    <ul class="left">
+                        <li href="#" class="logo-text">TOOLS</li>
+                        <li class=""><img src="img/bob-logo.png" alt=""
+                                style="margin-left:-25%; height:  8vh; width: 10vh;"></li>
+
+                    </ul>
+
+
+                    <ul class="right">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="slider-out">
+        <div class="slider">
+            <ul class="slides">
+                <li class="image-container">
+                    <div class="caption center-align valign-wrapper">Paintless Dent Repair: Where Art Meets Automotive
+                        Science</div>
+
+                    <img class="headline_img" width="900"
+                        src="https://www.zimbrickbodyshop.com/blogs/2299/wp-content/uploads/2020/02/paintless-dent-repair-zimbrick-body-shop.jpg"
+                        alt="">
+                    </img>
+                    <div class="cover"></div>
+                </li>
+                <li class="image-container">
+                    <h1 class="caption center-align">Your Car's Second Chance: We Fix Dents Without a Trace</h1>
+                    <img class="headline_img material-boxed" src="img/DSC08476.JPG" alt="">
+                    <div class="cover"></div>
+                    </img>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 class="ser">Services offered</h2>
+    </section>
+    <div class="divider"></div>
+    <div class="body container">
+
+
+        <div class="row">
+            <div class="col s12 offset-m1 m5 offset-l1 l5 xl3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/DSC08476.JPG">
+                        <span class="black card-title">Paintless Dent Repair</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p>PDR restores your car's look by removing dents, avoiding traditional bodywork and paint.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col  s12 m5 l5 xl3">
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                            src="https://media.istockphoto.com/id/1370897852/photo/broken-car-windscreen.jpg?s=612x612&w=0&k=20&c=mW2mUNGhV_6sJrH_-4taom1RYGeRFegwi9DGscB3k40=">
+                        <span class="black card-title">Hail Damage Repair</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p>"Hail repair uses tech to eliminate dents caused by hail, no bodyworks or paint."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 offset-l1 l5 offset-m1 m5 xl3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://lirp.cdn-website.com/90cc352a/dms3rep/multi/opt/door+ding-2-960w.jpg">
+                        <span class="black card-title">Door Ding Repair</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p>Door ding repair erases dents from impacts, restores look without repainting the car.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col  s12 m5 l5 xl3">
+                <div class="card">
+                    <div class="card-image">
+                        <img
+                            src="https://www.limerickautobody.com/blog/wp-content/uploads/2020/08/minor-car-accident.jpeg">
+                        <span class="black card-title">Minor Collision Repair</span>
+
+                    </div>
+                    <div class="card-content">
+                        <p class="activator">
+                            Minor collision fix focuses on small accident damage, ensures precise restoration.
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title
+                            <i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row center-align">
+
+            <br>
+            <br>
+            <a
+                class="col btn-large waves-effect waves-light center offset-xl3 xl3 offset-l3 l3 offset-m2 m4 offset-s1 s5 contact">Contact
+                Us</a>
+            <a class="col btn-large waves-effect waves-light xl3 m4 l3 book s5">Book Now</a>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({
+                indicators: false
+            });
+            $(window).resize(function () {
+                var width = $(window).width();
+                if (width <= 767) {
+                    $('.slider').slider({
+                        height: 250,
+                        indicators: false
+                    });
+                } else {
+                    $('.slider').slider({
+                        indicators: false
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
