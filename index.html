@@ -27,7 +27,7 @@
                     </ul>
 
 
-                    <ul class="right">
+                    <ul class="right hide-on-small-and-down">
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">About Us</a></li>
                     </ul>
@@ -135,7 +135,7 @@
             <br>
             <br>
             <a
-                class="col btn-large waves-effect waves-light center offset-xl3 xl3 offset-l3 l3 offset-m2 m4 offset-s1 s5 contact">Contact
+                class="col btn-large waves-effect waves-light center offset-xl3 xl3 offset-l3 l3 offset-m2 m4 offset-s1 s5 contact ">Contact
                 Us</a>
             <a class="col btn-large waves-effect waves-light xl3 m4 l3 book s5">Book Now</a>
         </div>
@@ -152,9 +152,16 @@
             $('.slider').slider({
                 indicators: false
             });
+            var width = $(window).width();
+                if (width>0 && width <= 767) {
+                    $('.slider').slider({
+                        height: 150,
+                        indicators: false
+                    });
+                }
             $(window).resize(function () {
                 var width = $(window).width();
-                if (width <= 767) {
+                if (width>0 && width <= 767) {
                     $('.slider').slider({
                         height: 150,
                         indicators: false
