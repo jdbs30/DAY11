@@ -72,7 +72,7 @@ h5{
     font-weight: 400;
 }
 .card{
-    height: fit-content;
+    height: 40vh;
     .card-image img{
         filter: brightness(80%);
     }
@@ -148,11 +148,13 @@ p{
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width:0px) and (max-width: 600px) {
     .caption {
         font-size: 27px;
     }
-
+    .card{
+        height: 38vh;
+    }
     .card-image img{
         height: 100%;
         width: 100%;
