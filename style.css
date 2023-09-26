@@ -157,9 +157,6 @@ p{
         height: 100%;
         width: 100%;
     }
-    .slider {
-        height: 10px;
-    }
 }
 @media (min-width: 1430px) {
     .caption {

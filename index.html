@@ -154,17 +154,12 @@
             });
             $(window).resize(function () {
                 var width = $(window).width();
-                if (width >600 && width <= 767) {
-                    $('.slider').slider({
-                        height: 250,
-                        indicators: false
-                    });
-                } else if(width<600){
+                if (width <= 767) {
                     $('.slider').slider({
                         height: 150,
                         indicators: false
                     });
-                } 
+                }
                 else {
                     $('.slider').slider({
                         indicators: false
